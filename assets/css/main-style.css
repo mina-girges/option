@@ -1,0 +1,167 @@
+/* ------------------------------------------------------------------------------
+	 Font
+-------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Almarai:wght@300;400&family=Poppins:wght@300&di&family=Readex+Pro&display&family=Noto+Kufi+Arabic:wght@300;400;500;600&family=Kufam:ital,wght@0,500;1,400&display&=Ubuntu&display=swap&family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@200;300;400&family=Vazirmatn:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tajawal:wght@200;300;400;500;700&display&family=Poppins:wght@300&display=swap');
+
+/*---
+font-family: 'Cairo', sans-serif;
+font-family: 'El Messiri', sans-serif;
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+font-family: 'Vazirmatn', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Almarai', sans-serif;
+font-family: 'Tajawal', sans-serif;
+---*/
+/*============================
+    ROOT SECTION
+============================*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+:root {
+    --blue: #3e04dd;
+    --blue-tow: #0075FF;
+    --blue-three: #032572;
+    --green: #0CA7AA;
+    --green-tow: #1ec0b2;
+    --white: #FFFFFF;
+    --white-tow: #F8F6F6;
+    --white-three: #d6cfcf;
+    --white-four: #f0f6f9;
+    --black: #000000;
+    --black-tow: #010317;
+    --black-three: #000d1442;
+    --gray: #5d5a5a;
+    --gray-tow: #bababa;
+    --yellow: #FED04E;
+    --yellow-tow: #F0DB4F;
+    --red: #f10505;
+    --orange: #ff7700;
+    --pink: #ff00bb;
+    --pink-tow: #e30c5b;
+    --purple: #833AB4;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1.2rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--gray);
+}
+
+body {
+    overflow-y: hidden;
+    background: var(--white);
+    font-family: 'Cairo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    opacity: .4;
+}
+
+i {
+    color: var(--green);
+}
+
+/*============================
+    DISPLAY GRID
+============================*/
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+    gap: 10px;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 3s, visibility 1s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #7449f5;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite; 
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}

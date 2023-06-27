@@ -1,0 +1,200 @@
+/*============================
+    HEADER & NAVBAR
+============================*/
+#option-header {
+    z-index: 1000;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .5s ease 0s;
+}
+
+#option-header .logo {
+    margin-top: 1.5rem;
+    width: 16rem;
+}
+
+#option-header .navbar a {
+    font-size: 16px;
+    color: var(--black);
+    margin: 0 2em;
+    font-family: 'Tajawal', sans-serif;
+}
+
+#option-header .but {
+    background: linear-gradient(var(--blue-tow), var(--blue));
+    color: var(--white);
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+}
+
+#option-header .but i {
+    color: var(--white);
+    margin: 0rem 0rem 0rem 1rem;
+}
+
+#option-header .but:hover {
+    background: linear-gradient(var(--green-tow), var(--green));
+}
+
+#menu-btn {
+    font-size: 3rem;
+    padding: 1rem 3rem;
+    background: var(--white-four);
+    border-radius: .7rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 780px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    #option-header {
+        background: var(--white);
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 3rem;
+    }
+
+    #option-header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 85%;
+        box-shadow: 5rem var(--black);
+        margin: auto;
+        border-radius: 0 0 1rem 1rem;
+        background: var(--white-four);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    #option-header .navbar.active {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    #option-header .navbar a {
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+    }
+}
+
+@media (max-width: 360px) {
+    #option-header {
+        display: none;
+    }
+}
+
+/*============================
+    FOOTER
+============================*/
+#naqrah-footer {
+    background: var(--black-tow);
+    padding: 3rem 9%;
+}
+
+#naqrah-footer .container {
+    display: -ms-grid;
+    font-size: 62.5%;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+#naqrah-footer .container .box {
+    padding: 1rem 0;
+}
+
+#naqrah-footer .container .image img {
+    width: 30rem;
+    margin: auto;
+}
+
+#naqrah-footer .container .box .social {
+    text-align: end;
+    padding: 2rem 3rem 0 0;
+}
+
+#naqrah-footer .container .box .social a {
+    font-size: 2.5rem;
+    padding: .4rem 1.7rem;
+    background-color: var(--gray);
+    border-radius: .5rem;
+    margin-left: 1rem;
+    zoom: 1;
+    width: 4rem;
+}
+
+#naqrah-footer .container .box .social a i {
+    color: var(--gray-tow);
+}
+
+#naqrah-footer .container .box .social .f:hover,
+#naqrah-footer .container .box .social .l:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+#naqrah-footer .container .box .social .i:hover {
+    background: linear-gradient(to top left, var(--pink-tow), var(--purple));
+    background-size: cover;
+    color: var(--white);
+}
+
+#naqrah-footer .container .box .social .t:hover {
+    background: var(--blue-tow);
+    color: var(--white);
+}
+
+#naqrah-footer .container .box .social .y:hover {
+    background: var(--red);
+    color: var(--white);
+}
+
+#naqrah-footer .container .box h3 {
+    font-size: 2rem;
+    color: var(--gray-tow);
+    padding: 1rem 0;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+#naqrah-footer .container .link a {
+    color: var(--white);
+    display: block;
+    font-size: 2rem;
+    padding: 1rem 0;
+    width: 70%;
+    font-family: 'Cairo', sans-serif;
+}
+
+#naqrah-footer .container .link a:hover {
+    color: var(--gray-tow);
+}
+
+#naqrah-footer .privacy {
+    color: var(--gray-tow);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#naqrah-footer .privacy span {
+    color: var(--blue-tow);
+}
+
+@media (max-width: 360px) {
+    #naqrah-footer {
+        display: none;
+    }
+}
