@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <script src="https://kit.fontawesome.com/97772c25a1.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="login" id="login">
+
+        <div class="title">
+
+            <h1>أنشىء حسابك اﻷن</h1>
+            <h6>هل لديك حساب على نقرة ؟ <a href="#">قم بتسجيل الدخول</a>
+                <h6>
+
+        </div>
+
+        <form dir="rtl" action="">
+
+            <div class="name input">
+                <label for="name">الاسم بالكامل</label>
+                <input name="name" type="text" placeholder="محمود محمد أشرف" required>
+            </div>
+
+            <div class="name input">
+                <label for="email">البريد الاكتروني</label>
+                <input name="email" type="email" placeholder="ahmed@gmail.com" required>
+            </div>
+
+            <div class="name input">
+                <label for="password">كلمة المرور</label>
+                <input name="password" type="password" placeholder="h#5H*56WeO9" id="pwd" required>
+                    <button class="pwd-show" id="eye">
+                      عرض كلمة المرور &#128584;
+                        <span>كلمة المرور معروضة &#128586;</span>
+                    </button>
+            </div>
+
+            <button class="submit" type="submit">سجل اﻷن</button>
+
+        </form>
+
+    </div>
+
+
+    <script>
+        function show() {
+            var p = document.getElementById('pwd');
+            p.setAttribute('type', 'text');
+        }
+
+        function hide() {
+            var p = document.getElementById('pwd');
+            p.setAttribute('type', 'password');
+        }
+
+        var pwShown = 0;
+
+        document.getElementById("eye").addEventListener("click", function () {
+            if (pwShown == 0) {
+                pwShown = 1;
+                show();
+            } else {
+                pwShown = 0;
+                hide();
+            }
+        }, false);
+    </script>
+
+</body>
+
+</html>

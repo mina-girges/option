@@ -1,0 +1,152 @@
+#naqrah-line {
+    background: var(--black-tow);
+    margin: 8rem auto;
+    display: -webkit-box;
+    padding: 1rem 10rem;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#naqrah-line a {
+    color: var(--white-three);
+    font-size: 1.8rem;
+    margin-left: .2rem;
+}
+
+#naqrah-line a i {
+    color: var(--green);
+    margin-left: .5rem;
+}
+
+
+#naqrah-line p {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin: 0 1.9rem;
+}
+
+@media (max-width: 360px) {
+    #naqrah-line {
+        display: none;
+    }
+}
+
+/*==========================
+    ABOUT
+===========================*/
+
+#about-naqrah {
+    padding: 20rem 40rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+#about-naqrah .image img {
+    width: 40rem;
+    border-radius: 50%;
+    padding: 0rem 1.5rem;
+}
+
+#about-naqrah .title {
+    font-family: "Noto Sans Arabic", tajawal, "Open Sans";
+    width: 60rem;
+}
+
+#about-naqrah .title h1 i {
+    font-size: 4rem;
+    color: var(--gray);
+    margin-left: 1rem;
+}
+
+#about-naqrah .title h1 {
+    font-size: 3rem;
+    color: var(--blak);
+}
+
+@media (max-width: 1650px) {
+    #about-naqrah {
+        padding: 20rem 15rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #about-naqrah {
+        padding: 20rem 5rem;
+    }
+
+    #about-naqrah .image img {
+        padding: 0rem 2.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    #about-naqrah {
+        display: block;
+    }
+
+    #about-naqrah .image img {
+        width: 80%;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #about-naqrah .title {
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    #about-naqrah {
+        display: none;
+    }
+}
+
+/*==========================
+    INFO
+===========================*/
+
+#info-naqrah {
+    padding: 2rem 20rem;
+
+}
+
+#info-naqrah p {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+#info-naqrah p span {
+    color: var(--blue);
+}
+
+@media (max-width: 900px) {
+    #info-naqrah {
+        padding: 1rem 5rem;
+    }
+
+    #about-naqrah .image img {
+        padding: 0rem 2.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    #info-naqrah {
+        display: none;
+    }
+}
+
+/*==========================
+    PARTNER
+===========================*/
+#naqrah-partner {
+    display: -webkit-box;
+}
+
+#naqrah-partner .image img {
+    width: 30rem;
+}

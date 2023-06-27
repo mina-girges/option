@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tajawal:wght@200;300;400;500;700&display&family=Poppins:wght@300&family=Tajawal:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Almarai:wght@300;400&family=Poppins:wght@300&di&family=Readex+Pro&display&family=Noto+Kufi+Arabic:wght@300;400;500;600&family=Kufam:ital,wght@0,500;1,400&display&=Ubuntu&display=swap&family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@200;300;400&family=Vazirmatn:wght@200;300;400&display=swap');
+
+* {
+    background: var(--white-tow);
+}
+
+:root {
+    --blue: #3e04dd;
+    --blue-tow: #0075FF;
+    --blue-three: #032572;
+    --green: #0CA7AA;
+    --green-tow: #1ec0b2;
+    --white: #FFFFFF;
+    --white-tow: #F8F6F6;
+    --white-three: #d6cfcf;
+    --white-four: #f0f6f9;
+    --black: #000000;
+    --black-tow: #010317;
+    --black-three: #000d1442;
+    --gray: #5d5a5a;
+    --gray-tow: #bababa;
+    --yellow: #FED04E;
+    --yellow-tow: #F0DB4F;
+    --red: #f10505;
+    --orange: #ff7700;
+    --pink: #ff00bb;
+    --pink-tow: #e30c5b;
+    --purple: #833AB4;
+}
+
+#login {
+    text-align: center;
+    transform: translate(0%, 30%);
+    font-family: 'Tajawal', sans-serif;
+}
+
+#login .title h1 {
+    color: var(--blue);
+    font-size: 2.5rem;
+}
+
+#login .title h6 {
+    color: var(--gray);
+    font-size: 1.5rem;
+}
+
+#login .title h6 a {
+    color: var(--green);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#login label {
+    display: block;
+    font-size: 1.5rem;
+    width: 85%;
+    font-family: 'Cairo', sans-serif;
+    margin-top: 1rem;
+
+}
+
+#login input {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 20%;
+}
+
+#login .pwd-show {
+    display: block;
+    background: var(--blue);
+    color: var(--white);
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    margin:1rem auto;
+    font-size: 1.2rem;
+    font-family: 'Tajawal', sans-serif;
+}
+#login .pwd-show span{
+    display: none;
+    background: var(--blue);
+    color: var(--white);
+}
+
+#login .pwd-show span::hover {
+    display: block;
+}
+
+#login .submit {
+    background: var(--green);
+    color: var(--white);
+    padding: .9rem 3rem;
+    border-radius: 5rem;
+    border: .1rem solid var(--green);
+    width: 22%;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Tajawal', sans-serif;
+}
+
