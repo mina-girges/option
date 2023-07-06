@@ -115,7 +115,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 300px) {
     #option-background {
         display: none;
     }
@@ -221,7 +221,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 300px) {
     #option-advantages {
         display: none;
     }
@@ -315,7 +315,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 300px) {
 
     #naqrah-coures {
         display: none;
@@ -416,7 +416,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 300px) {
     #naqrah-blog {
         display: none;
     }
