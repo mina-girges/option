@@ -1,7 +1,7 @@
 /*============================
-    NAQRAH BACKGROUND
+    OPTION BACKGROUND
 ============================*/
-#naqrah-background {
+#option-background {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -12,19 +12,19 @@
     background: var(--white);
 }
 
-#naqrah-background .title h1 {
+#option-background .title h1 {
     font-family: "NotoKufi";
     margin-bottom: 1rem;
     font-size: 5.5rem
 }
 
-#naqrah-background .title p {
+#option-background .title p {
     font-family: 'Cairo', sans-serif;
     margin-bottom: 2.5rem;
     font-size: 2.2rem;
 }
 
-#naqrah-background .title a {
+#option-background .title a {
     background: var(--blue);
     padding: 1rem 3.5rem;
     border-radius: 3.5rem;
@@ -32,149 +32,197 @@
     font-family: 'Cairo', sans-serif;
     font-weight: 150;
     font-size: 2rem;
+    font-weight: 600;
+
 }
 
-#naqrah-background .title a i {
+#option-background .title a i {
     color: var(--white);
 }
 
-#naqrah-background .title a:hover {
+#option-background .title a:hover {
     background: var(--green);
 }
 
-#naqrah-background .image video {
+#option-background .image video {
     width: 85%;
     margin-top: 2rem;
 }
 
 @media (max-width: 1035px) {
-    #naqrah-background .title h1 {
+    #option-background .title h1 {
         font-size: 4rem
     }
 
-    #naqrah-background .title p {
+    #option-background .title p {
         font-size: 2rem;
     }
 
-    #naqrah-background .image video {
+    #option-background .image video {
         width: 75%;
     }
 }
 
 @media (max-width: 755px) {
-    #naqrah-background .title h1 {
+    #option-background .title h1 {
         font-size: 3rem
     }
 
-    #naqrah-background .title p {
+    #option-background .title p {
         font-size: 1.7rem;
     }
 
-    #naqrah-background .image video {
+    #option-background .image video {
         width: 70%;
     }
 }
 
 @media (max-width: 700px) {
-    #naqrah-background {
+    #option-background {
         display: block;
         padding: 13rem 3rem 0rem 1rem;
     }
 
-    #naqrah-background .title h1 {
+    #option-background .title h1 {
         font-size: 4rem
     }
 
-    #naqrah-background .title p {
+    #option-background .title p {
         font-size: 2rem;
     }
 
-    #naqrah-background .image video {
+    #option-background .image video {
         width: 90%;
     }
 }
 
 @media (max-width: 700px) {
-    #naqrah-background {
+    #option-background {
         display: block;
         padding: 13rem 3rem 0rem 1rem;
     }
 
-    #naqrah-background .title h1 {
+    #option-background .title h1 {
         font-size: 4rem
     }
 
-    #naqrah-background .title p {
+    #option-background .title p {
         font-size: 2rem;
     }
 
-    #naqrah-background .image video {
+    #option-background .image video {
         width: 90%;
     }
 }
 
 @media (max-width: 360px) {
-    #naqrah-background {
+    #option-background {
         display: none;
     }
 }
 
 /*============================
-    NAQRAH ADVANTAGES
+    OPTION ADVANTAGES
 ============================*/
-#naqrah-advantages {
-    padding: 7rem 15rem;
+#option-advantages {
     display: flex;
     text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-#naqrah-advantages .box {
-    margin-right: 1rem;
+#option-advantages .box .development {
+    background: var(--blue);
+    color: var(--white);
+    padding: 3rem 6rem;
+    border-radius: 1rem;
 }
 
-#naqrah-advantages .box img {
-    width: 40%;
+#option-advantages .box .computer {
+    background: var(--purple);
+    color: var(--white);
+    padding: 3rem 6rem;
+    border-radius: 1rem;
 }
 
-#naqrah-advantages .box h3 {
+#option-advantages .box .programs {
+    background: var(--green);
+    color: var(--white);
+    padding: 3rem 6rem;
+    border-radius: 1rem;
+}
+
+#option-advantages .box .marketing {
+    background: var(--blue-tow);
+    color: var(--white);
+    padding: 3rem 6rem;
+    border-radius: 1rem;
+}
+
+#option-advantages .box i {
     font-size: 3rem;
-    color: var(--blue);
-    font-family: 'Tajawal', sans-serif;
+    color: var(--white);
+}
+
+#option-advantages .box h2 {
+    font-size: 2rem;
+    font-family: 'Almarai', sans-serif;
     margin: 2rem 0 1rem 0;
 }
 
-#naqrah-advantages .box p {
-    color: var(--black);
-    font-size: 2rem;
-}
-
 @media (max-width: 1160px) {
-    #naqrah-advantages {
+    #option-advantages {
         margin-top: 2rem;
         padding: 7rem 1.5rem;
     }
+}
 
-    #naqrah-advantages .box h3 {
-        font-size: 2.5rem;
+@media (max-width: 1020px) {
+
+    #option-advantages .box .development,
+    #option-advantages .box .computer,
+    #option-advantages .box .programs,
+    #option-advantages .box .marketing {
+        margin: 0 1rem;
     }
 }
 
-@media (max-width: 650px) {
-    #naqrah-advantages .box img {
-        width: 60%;
+@media (max-width: 750px) {
+
+    #option-advantages .box .development,
+    #option-advantages .box .computer,
+    #option-advantages .box .programs,
+    #option-advantages .box .marketing {
+        padding: 1.9rem 3rem;
+    }
+}
+
+@media (max-width: 550px) {
+    #option-advantages {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    #naqrah-advantages .box h3 {
-        font-size: 2rem;
+    #option-advantages .box .development,
+    #option-advantages .box .computer,
+    #option-advantages .box .programs,
+    #option-advantages .box .marketing {
+        margin: 1rem ;
     }
+}
 
-    #naqrah-advantages .box p {
-        font-size: 1.5rem;
+@media (max-width: 390px) {
+
+    #option-advantages .box .development,
+    #option-advantages .box .computer,
+    #option-advantages .box .programs,
+    #option-advantages .box .marketing {
+        margin: 1rem 0;
     }
 }
 
 @media (max-width: 360px) {
-    #naqrah-advantages {
+    #option-advantages {
         display: none;
     }
 }

@@ -1,4 +1,4 @@
-let navbar = document.querySelector('.naqrah-header .navbar');
+let navbar = document.querySelector('.option-header .navbar');
 
 document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active');
