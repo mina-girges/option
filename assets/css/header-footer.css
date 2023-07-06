@@ -81,7 +81,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 300px) {
     #option-header {
         display: none;
     }
@@ -185,7 +185,7 @@
     color: var(--blue-tow);
 }
 
-@media (max-width: 360px) {
+@media (max-width: 300px) {
     #naqrah-footer {
         display: none;
     }
