@@ -1,324 +1,108 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 
 <head>
-    <!--===== META ELEMENT =====-->
+    <!--===== Meta Element =====-->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="اوبشن - تعلم تقدم اشتغل. عالم من المحتوي التقني بوابة الي عالم الانترنت.">
-    <meta name="keywords"
-        content="أكاديمية, اوبشن, تعليم, جيرافيك, كمبيوتر, علوم, حواسيب, برمجة, تصميم, شروحات, ريادة أعمال">
-    <meta property="og:description" content="أكاديمية اوبشن التعليمية
-    مصدر من المعلومات و الدورات التي تؤهلك الي سوق العمل الحر تحتوي اﻷكديمية على مسارات في البرمجة وأنشاء المواقع اﻷكترونية
-    مسارات في تصاميم الجرافيكس وتعديل الفديوهات مسارات في أنشاء وادارة المحتوي الرقمي وغيرها من مسارات">
-    <meta property="og:locale" content="ar_EG">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="اوبشن - مجتمع عربي تقني">
-    <!--===== CSS FILE =====-->
-    <link rel="stylesheet" href="assets/css/main-style.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/header-footer.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/index.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/transitions.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/fonts.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/mix-screen.css" type="text/css">
-    <!--===== JAVESCRIPR FILE =====-->
-    <script src="assets/js/main-script.js" defer></script>
-    <script src="https://kit.fontawesome.com/97772c25a1.js" crossorigin="anonymous"></script>
-    <!--===== TITLE & ICON =====-->
-    <link rel="shortcut icon" href="assets/img/ico/naq.ico" type="image/x-icon">
-    <title>اوبشن - مجتمع عربي تقني</title>
-
+    <!--===== Titla And Icon =====-->
+    <title>الصفحة الرئسية - Naqrah</title>
+    <link rel="icon" href="assets/image/nef.ico">
+    <!--===== Css File =====-->
+    <link rel="stylesheet" href="assets/css/root.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/framework.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
 </head>
 
-<body dir="rtl">
-    <!--========================================
-       OPTION HEADER
-    ==========================================-->
-    <div class="grid-container">
+<body>
+    <!--=====================
+        Navbar 
+    ========================-->
+    <header>
+        <div class="logo">
+            <img src="assets/image/nef-logo.png">
+        </div>
 
-        <header data-aos="fade-up" data-aos-delay="350" class="item1 option-header" id="option-header">
+        <input type="checkbox" id="navCheck" hidden>
 
-            <div id="menu-btn" class="fas fa-bars"></div>
+        <nav>
+            <div class="logo">
+                <img src="assets/image/nef-logo.png">
+            </div>
+            <ul>
+                <li><a href="" class="active"><i class="fas fa-house"></i> الرئسية </a></li>
+                <li><a href=""><i class="fas fa-server"></i> المشاريع</a></li>
+                <li><a href=""><i class="fas fa-arrow-pointer"></i> عن نقرة</a></li>
+                <li><a href=""><i class="fas fa-rss"></i> المدونة</a></li>
+                <li><a href=""><i class="fas fa-headset"></i> الدعم</a></li>
+                <li><a href=""><i class="fas fa-phone"></i> تواصل معنا</a></li>
 
-            <a href="#">
-                <img class="logo" src="assets/img/option-logo.png" alt="OPTION">
-            </a>
-
-            <ul class="navbar">
-                <a href="data/learn_courses/learn.html"><i class="fas fa-bookmark"></i> مسارات التعلم</a>
-                <a href="data/blog/blog.html"><i class="fas fa-newspaper"></i> المقالات</a>
-                <a href="data/book/book.html"><i class="fas fa-book"></i> الكتب</a>
-                <a href="data/question/q_a.html"><i class="fas fa-question"></i> الاستفسارات</a>
+                <!-- <a class="team-join" href="">الانضمام الينا</a> -->
             </ul>
-            <a class="z-0" href=""></a>
-        </header>
-    </div>
+        </nav>
 
-    <!--========================================
-       OPTION BACKGROUNG
-    ==========================================-->
+        <label for="navCheck" class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    <!--=====================
+        Banner 
+    ========================-->
+    <section class="banner">
+        <div class="back-item1">
+            <img src="assets/image/back-item1.png">
+        </div>
 
-    <div class="item1 option-background" id="option-background">
-
-        <div data-aos="fade-left" data-aos-delay="250" class="title">
-
-            <h1>تعلّم، تقدّم، أكتسب.</h1>
-
+        <div class="title-ban">
+            <h1>مؤسسة <span>نقرة </span>التعليمية</h1>
             <p>
-                نعرف اﻷن مدي مستوي تتطور العالم الرقمي الذي نعيش فية، لذا يوجد <br> المجتمع العربي أوبشن لتعليم وتنمية
-                المهارات في البرمجيات وعلوم الحواسيب <br> نحن معك حتي تصبح خبير في العالم الرقمي.
+                هدفنا هو بناء جيل لدية قدرة عالية في الادراك والمعرفة بالعصر الحديث <br> من خلال وسائل تعليمية
+                مناسبة لشباب والاطفال .
             </p>
-
-            <a href="log/register.html"><i class="fas fa-arrow-up-right-from-square"></i> لنبدا الرحلة معاً</a>
-
         </div>
 
-        <div data-aos="fade-right" data-aos-delay="150" class="image">
-            <video src="assets/img/index/hero_video.mp4" muted autoplay loop></video>
+        <div class="back-item3">
+            <div class="loa">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-
-    </div>
-
-    <!--========================================
-        Advantages
-    ==========================================-->
-
-    <div data-aos="fade-up" data-aos-delay="350" class="option-advantages" id="option-advantages">
-
-        <div class="box">
-            <a href="" title="البرمجة والتطوير ( 0 مقال )">
-                <div class="development" id="development">
-                    <i class="fab fa-whmcs"></i>
-                    <h2>برمجة والتطوير</h2>
-                </div>
-            </a>
-        </div>
-
-        <div class="box">
-            <a href="" title="علوم الحواسيب ( 0 مقال )">
-                <div class="computer" id="computer">
-                    <i class="fas fa-computer"></i>
-                    <h2>علوم الحواسيب</h2>
-                </div>
-            </a>
-        </div>
-
-        <div class="box">
-            <a href="" title="التقنية والبرامج ( 0 مقال )">
-                <div class="programs" id="programs">
-                    <i class="fab fa-sellsy"></i>
-                    <h2>التقنية والبرامج</h2>
-                </div>
-            </a>
-        </div>
-
-        <div class="box">
-            <a href="" title="التسويق الرقمي ( 0 مقال )">
-                <div class="marketing" id="marketing">
-                    <i class="fas fa-shop"></i>
-                    <h2>التسويق الرقمي</h2>
-                </div>
-            </a>
-        </div>
-
-    </div>
-
-    <!--========================================
-        Courses
-    ==========================================-->
-
-    <section data-aos="fade-up" data-aos-delay="450" class="naqrah-coures" id="naqrah-coures">
-
-        <div class="title-courses">
-            <h1>المسارات والدورات</h1>
-            <hr class="hr1">
-            <hr class="hr2">
-        </div>
-
-        <div class="box-container">
-
-            <a class="card_1 box" href="#"></a>
-
-            <a class="card_2 box" href="#"></a>
-
-            <a class="card_3 box" href="#"></a>
-
-            <a class="card_4 box" href="#"></a>
-
-        </div>
-
     </section>
-
-    <!--========================================
-        BLOG
-    ==========================================-->
-
-    <section data-aos="fade-up" data-aos-delay="450" class="naqrah-blog item2" id="naqrah-blog">
-
-        <div class="title-blog">
-            <h1>أحدث المقالات</h1>
-            <hr class="hr1">
-            <hr class="hr2">
+    <!--=====================
+        About 
+    ========================-->
+    <section class="about-video">
+        <div class="video">
+            <video src="assets/image/index/about_video.mp4" autoplay muted></video>
         </div>
 
-        <div class="box-container">
-
-            <a class="box" href="#">
-                <img src="assets/img/blog/programming_tags.jpg" alt="Programing Tags">
-                <h6>العلامات البرمجية | Semicolon ( ; )</h6>
-            </a>
-
-            <a class="box" href="#">
-                <img src="assets/img/blog/visual_studio_code.jpg" alt="Visual Studio Code">
-                <h6>أهم الاضافات في | Visual Studio</h6>
-            </a>
-
-            <a class=" box" href="#">
-                <img src="assets/img/blog/ui_ux.jpg" alt="Ui&Ux">
-                <h6> عن تصاميم الوجهات | ( Ui&Ux )</h6>
-            </a>
-
-            <a class=" box" href="#">
-                <img src="assets/img/blog/ui_ux.jpg" alt="Ui&Ux">
-                <h6> عن تصاميم الوجهات | ( Ui&Ux )</h6>
-            </a>
-
-        </div>
-
-    </section>
-
-    <!--========================================
-        INFO
-    ==========================================-->
-
-
-
-    <!--========================================
-        LESSONE
-    ==========================================-->
-
-    <section data-aos="fade-up" data-aos-delay="600" class="naqrah-lessone" id="naqrah-lessone">
-
-        <div class="title-lessone">
-            <h2>أحدث الدروس المشروحة</h2>
-            <hr class="hr1">
-            <hr class="hr2">
-        </div>
-
-        <div class="container">
-
-            <div class="box programing html">
-                <a href="" class="title"><i class="fab fa-html5"></i> ملخص عناصر <span>HTML</span></a>
-                <a href="" class="tutorial-type" id="programing">Programing</a>
-                <a href="" class="tutorial-type" id="html">Html</a>
-            </div>
-
-            <div class="box computer">
-                <a href="" class="title"><i class="fas fa-computer"></i> مقدمة في علوم الحاسوب</a>
-                <a href="" class="tutorial-type" id="computer">Computer</a>
-            </div>
-
-            <div class="box internet money">
-                <a href="" class="title"><i class="fas fa-dollar-sign"></i> كسب المال من اﻷنترنت</a>
-                <a href="" class="tutorial-type" id="internet">Internet</a>
-                <a href="" class="tutorial-type" id="money">Money</a>
-            </div>
-
-            <div class="box design social">
-                <a href="" class="title"><i class="fas fa-crop"></i>تصاميم السوشيال ميديا</a>
-                <a href="" class="tutorial-type" id="design">Design</a>
-                <a href="" class="tutorial-type" id="social">Social</a>
-            </div>
-        </div>
-
-    </section>
-
-    <!--========================================
-        BUSINESS
-    ==========================================-->
-
-    <section data-aos="fade-up" data-aos-delay="650" class="naqrah-business" id="naqrah-business">
-
-        <div class="title">
-            <h1>نقرة للاعمال الحرة والمستقلة . <i class="fa-solid fa-arrow-pointer"></i></h1>
-            <p>بعد التعلم وتنمية مهارة معينة لديك يمكنك التقديم </p>
-            <p>للعمل في <strong>نقرة للاعمال</strong> حيث نوفر لك
-                بيئة متكاملة سريعة وأمانة .</p>
-            <a href=""><i class="fas fa-arrow-right-to-city"></i> ألانضمام اﻷن لنقرة للاعمال.</a>
-        </div>
-
-    </section>
-
-    <!--========================================
-        FOOTER
-    ==========================================-->
-
-    <footer class="naqrah-footer" id="naqrah-footer">
-        <div class="container">
-            <div class="box image">
-                <a href="#"><img src="assets/img/option-logo.png" alt="Naqrah Academy"></a>
-
-                <div dir="ltr" class="box social">
-                    <a class="f" href=""><i class="fab fa-facebook"></i></a>
-                    <a class="i" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="t" href=""><i class="fab fab fa-twitter"></i></a>
-                </div>
-
-            </div>
-
-            <div class="box link" data-aos="fade-up" data-aos-delay="300">
-                <h3>أوبشن</h3>
-                <a href="assets/data/about-naqrah.html"><i class="fa-solid fa-arrow-pointer"></i> عن أوبشن </a>
-                <a href=""><i class="fas fa-database"></i> مؤسسة أفاق للتنمية </a>
-                <a href=""><i class="fas fa-users"></i> كن جزء من مجتمعنا </a>
-                <a href=""><i class="fas fa-server"></i> شروط الخدمة والاستخدام</a>
-                <a href=""><i class="fas fa-user-gear"></i> سياسة الخصوصية</a>
-                <a href=""><i class="fas fa-link"></i> تواصل معنا</a>
-            </div>
-
-            <div class="box link" data-aos="fade-up" data-aos-delay="300">
-                <h3>الخدمة</h3>
-                <a href=""><i class="fas fa-rss"></i> المدونة</a>
-                <a href=""><i class="fas fa-podcast"></i> بودكاست نقرة</a>
-                <a href=""><i class="fas fa-user-tie"></i> نقرة بيزنس</a>
-                <a href=""><i class="fab fa-leanpub"></i> المنصة التدريبية</a>
-                <a href=""><i class="fas fa-briefcase"></i> حقيبة اﻷعمال</a>
-                <a href=""><i class="fas fa-arrow-up-right-from-square"></i> مركز المساعدة</a>
-            </div>
-
-        </div>
-
-        <div class="box privacy">
-            <p dir="ltr">© 2023 Naqrah. All rights reserved to the <span>Naqrah</span> Educational Foundation.</p>
-        </div>
-
-    </footer>
-
-
-
-
-    <article class="mix-screen" id="mix-screen">
-        <div class="image">
-            <img src="assets/img/naqrah-logo.png" alt="">
-        </div>
-
-        <div class="title">
+        <div class="about">
             <h2>
-                موقع نقرة
+                نقرة هي منصة إلكترونية عربية تم تأسيسها تحت مبادرة تعليم الشباب العربي العصر التكنولوجي الحديث والتي
+                تحرص على بذل كافة الجهود لوضع حجر الأساس لتطور وازدهار الشعوب...
             </h2>
-
-            <p> لدي موقع نقرة الكثير لتقديمه بحيث نطلب منك توجيه جهازك إلى الوضع الرأسي أو العثور علي شاشة أكبر.
-                لكي
-                تستمتع بتجربة مميزة.</p>
+            <a href="" class="but"><i class="fas fa-arrow-pointer"></i> عن نقرة</a>
         </div>
-    </article>
+    </section>
+    <!--=====================
+        News 
+    ========================-->
+        <section class="news">
 
-    
+        </section>
+
+
     <!--==========================
-        Script SECTION
+        Script
     =============================-->
     <script src="assets/js/transitions.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/97772c25a1.js" crossorigin="anonymous"></script>
     <script>
         AOS.init({
             duration: 800,

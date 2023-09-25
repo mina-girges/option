@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--vr-col-014);
+    font-family: "expo";
+}
+
+/*----------------------
+     Navbar
+----------------------*/
+header {
+    width: 80%;
+    height: 70px;
+    background: var(--vr-col-003);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+}
+
+header .logo {
+    width: 120px;
+    margin-top: 8px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header nav .logo {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    color: var(--vr-col-011);
+    display: block;
+    margin: 0 2px;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+}
+
+header nav ul li a i {
+    color: var(--vr-col-016);
+}
+
+header nav ul li a:hover {
+    background: var(--vr-col-004);
+}
+
+header nav ul li a.active {
+    background: var(--vr-col-020);
+    color: var(--vr-col-003);
+}
+
+.menu {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.menu:hover {
+    background: #f6f4ff;
+}
+
+.menu div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: var(--vr-col-011);
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    #navCheck:checked~nav {
+        right: 0;
+    }
+
+    header nav {
+        position: absolute;
+        right: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background: #fefefe;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    header nav .logo {
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    header nav ul li a {
+        margin-bottom: 5px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    header nav ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+/*----------------------
+     Banner
+----------------------*/
+.banner {
+    background: url(../image/back-item2.png) no-repeat;
+    background-position: right bottom;
+    background-size: 50rem;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.banner .back-item1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.banner .back-item1 img {
+    width: 160px;
+    margin-left: -11px;
+    margin-top: -1px;
+}
+
+.banner .title-ban {
+    color: var(--vr-col-001);
+    text-align: center;
+    margin: -200px 0 0 0;
+}
+
+.banner .title-ban h1 {
+    font-size: 3rem;
+}
+
+.banner .title-ban h1 span {
+    color: var(--vr-col-036);
+}
+
+.banner .title-ban p {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+.banner .back-item3 {
+    width: 9%;
+    margin: auto;
+}
+
+.banner .back-item3 .loa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    gap: 10px;
+    height: 150px;
+}
+
+.banner .back-item3 .loa span {
+    width: 4px;
+    height: 50px;
+    background: var(--vr-col-040);
+    animation: scale 0.9s ease-in-out infinite;
+}
+
+.banner .back-item3 .loa span:nth-child(2) {
+    background: var(--vr-col-024);
+    animation-delay: -0.8s;
+}
+
+.banner .back-item3 .loa span:nth-child(3) {
+    background: var(--vr-col-041);
+    animation-delay: -0.7s;
+}
+
+.banner .back-item3 .loa span:nth-child(4) {
+    background: var(--vr-col-036);
+    animation-delay: -0.6s;
+}
+
+.banner .back-item3 .loa span:nth-child(5) {
+    background: var(--vr-col-022);
+    animation-delay: -0.5s;
+}
+
+@keyframes scale {
+
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.05);
+    }
+
+    20% {
+        transform: scaleY(1);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .banner {
+        background: none;
+        margin-top: 5rem;
+        overflow: visible;
+        padding: 0 1rem;
+    }
+
+    .banner .title-ban h1 {
+        font-size: 2rem;
+    }
+
+    .banner .title-ban p {
+        font-size: 1rem;
+    }
+
+    .banner .back-item1 {
+        display: none;
+    }
+
+    .banner .back-item3 {
+        width: 50%;
+        margin: auto;
+    }
+
+    .banner .title-ban {
+        color: var(--vr-col-001);
+        text-align: center;
+        margin:0;
+    }
+}
+
+/*----------------------
+     About
+----------------------*/
+.about-video {
+    background: url(../image/index/about-back.jpg) var(--vr-col-001) no-repeat;
+    background-position: right top;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 8rem;
+}
+
+.about-video .video video {
+    width: 100%;
+}
+
+.about-video .about {
+    text-align: center;
+    line-height: 2.2rem;
+    font-size: 18px;
+}
+
+.about-video .about h2 {
+    padding: 3rem;
+}
+
+.about-video .about a {
+    background: var(--vr-col-016);
+    color: var(--vr-col-002);
+    padding: .9rem 1.9rem;
+    border-radius: 5rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about-video .about a:hover {
+    background: var(--vr-col-023);
+    color: var(--vr-col-002);
+    transition: 0.5s;
+}
+
+
+@media only screen and (max-width: 1010px) {
+    .about-video {
+        background: url(../image/index/about-back.jpg) var(--vr-col-001);
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem .5rem;
+    }
+
+    .about-video .video video {
+        width: 100%;
+        margin: 2rem 0;
+
+    }
+
+    .about-video .about {
+        text-align: center;
+        line-height: 2.2rem;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.news {
+    padding: 15rem 0;
+    background-size: 70px;
+
+
+    background: url(../image/news/news-back.png) var(--vr-col-036) no-repeat;
+    background-position: right;
+    background-size: 60% 100%;
+
+}
